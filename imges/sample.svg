@@ -1,0 +1,1 @@
+<style>@keyframes mouseOver{0%{transform:translate(0,0)}30%,50%{transform:translate(12%,-71%)}}@keyframes click{0%,34%{opacity:0;width:auto;transform:scale(1)}35%{opacity:1;transform:scale(3)}40%{opacity:1;transform:scale(9)}}::after,::before{box-sizing:border-box}</style>

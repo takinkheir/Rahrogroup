@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahro Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="position-header">
+    <img src="/imges/logo.svg" class="logo" > 
+    <nav class="nav_link" id="burger-1" >
+    <ul>
+        <li><a href="/Index.html"  >Home</a> </li>
+        <li><a href="/Services.html"  >Services</a> </li>
+        <a class="button"><button class="hello" onclick="togglePopup()" >Contact Us</button></a>
+    </ul>
+    </nav>
+    <div class="burger" onclick="toggleBurger()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+</header>
+<script> 
+    function togglePopup(){
+        document.getElementById("popup-1").classList.toggle("active");
+    }
+    function toggleBurger(){
+        document.getElementById("burger-1").classList.toggle("active");
+    }
+    
+            function show_image(src) {
+                var img = document.createElement("img");
+                    img.src = src;
+                    img.setAttribute("class", "background");
+                    document.body.appendChild(img);
+                
+            }
+     </script>
+             <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                    <div class="content">
+                  <div class="close-btn" onclick="togglePopup()">&times;</div>
+                        <h1>Contact Us</h1>
+                        <p>What is Lorem Ipsum?
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    </div>
+            </div>
+<body class="services-body"> 
+    <h2> Maintenance: </h2>
+    <div class="maintenance">
+        <img class="image-m" src="/imges/boiler.jpg" alt="maintenance"/>
+        <h4> Mechanical</h4>
+        <p class="text-s">boiler, steam boiler, chiller (absorption & compression), cooling tower, air handling unit, pumps, compressors, water softener (resin), filters & traps, gaskets, split units, ducted split units, fan coils, cooling units, chimney, septic tank, pipes inspection (bursting, insulation & corrosion), pool and sauna (equipment & pH), insulation, fire-fighting systems (fire box, fire hose reel, sprinklers and capsules), positive-pressure canals, faucet </p>
+        <h4>Electrical</h4>
+        <p class="text-s">Low-voltage electrical system, diesel generators, bus-duct, elevator, telephone cables, satellite cables, inter-communication system, internet cables, BMS system, access controls, fire detectors, smoke detectors, motion detectors, lighting detectors, alarm access points, fire-alarm system, CCTVs, automatic parking doors</p>
+    </div>
+    <h2>Optimization:</h2>
+    <div class="optimization">
+        <img class="image-o" src="/imges/optimization.jpg" alt="Optimization" />
+        <p class="text-s">Optimization comprises any suggestion to better performing of the Mechanical, Electrical to feel more comfort and easement, besides Aesthetical or visionary objects of decoration, apartment redecoration, re-design, designation of artistic art works for public spaces of the building. These processes are in very unlimited range of suggestions based on the inspections of our professionals and owner’s taste.
+            These kind of developing processes consist of: installation of condensing boilers (replacing with the older boilers), indoor mini-chiller installation, CCHP installation, individual water (gas) counter, replacement of building façade, replacement of faucets or taps, re-decoration in public spaces of the building such as valuable paintings, sculptures, fine art-works, metal decorative objects and high quality stuccos and wooden-trims, making the safe space for emergency condition (in case of existing needed space), execution of sprinklers for fire-fighting systems (in case of not existing), execution under-floor heating system for parking ramps, alarm system installation, CCTV installation, double-glazed window installation
+            </p>
+        </div>
+        <h2>Real estate:</h2>
+    <div class="Realestate">
+        <img class="image-r" src="/imges/real estate.jpg" alt="real estate"/>
+        <p class="text-s">Property trading and construction projects: This service of our experts includes counseling all procedures for anyone would like to start any construction affairs from the very first steps to the end. Our team guarantees to find the best conditions (finding engineers, professional plots, finding the proper location and etc.) for the owners; as if we are the agent of owners to deliver the highest benefit. </p>
+    </div>
+    </div>
+    
+</body>
+<script>
+    function toggleSubscribe(){
+        document.getElementById("subscribe-1").classList.toggle("active");
+    }
+    </script>
+    <div class="popup" id="subscribe-1">
+        <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="toggleSubscribe()">&times;</div>
+                <h1>Congratulations!</h1>
+                <p class="subscribe-text">You have successfully subscribed to our data base. You should expect to hear back from us shortly.</p>
+            </div>
+<footer>
+    <ul class="footer-section">
+<a class="footer-buttons" id="button" onclick="togglePopup()">Constact Us</a>
+<ul class="email-section">
+<from name="frmDataEntry" action="" method="get">
+    <button class="subscribe-btn" onclick="toggleSubscribe()"> Subscribe</button>
+<input type="email" class="email" placeholder="Email" maxlength="33"/></div>
+</html>
